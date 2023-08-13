@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        tools:context=".MainActivity">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:id="@+id/trig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="sin" />
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="cos" />
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="tan" />
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="frac" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowUnterTrig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="!" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="D-F" />
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="SF" />
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="(" />
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text=")" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:id="@+id/btnSquareRoot"
+                    android:autoSizeTextType="uniform"
+                    android:text="√" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="C" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="⌫" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="%" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="÷" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:id="@+id/btnSquare"
+                    android:autoSizeTextType="uniform"
+                    android:text="x²" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="7" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="8" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="9" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="×" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPie"
+                    style="@style/btnScienctific"
+                    android:autoSizeTextType="uniform"
+                    android:text="π" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="4" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="5" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="6" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="-" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/btnScienctific"
+                    android:id="@+id/btnE"
+                    android:autoSizeTextType="uniform"
+                    android:textAllCaps="false"
+                    android:text="e" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="1" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="2" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="3" />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="+" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/tbOnOff"
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="OFF"/>
+                <Button
+                    style="@style/btnOperators"
+                    android:id="@+id/btnAns"
+                    android:autoSizeTextType="uniform"
+                    android:text="Ans" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="0" />
+
+                <Button
+                    style="@style/btnNumbers"
+                    android:autoSizeTextType="uniform"
+                    android:text="." />
+
+                <Button
+                    style="@style/btnOperators"
+                    android:autoSizeTextType="uniform"
+                    android:text="=" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Convertor">
+    <TableRow
+        android:layout_height="150dp"
+        android:layout_width="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:hint="Enter Number"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/orange"
+            android:textSize="36sp" />
+    </TableRow>
+    <TableRow
+        android:layout_height="150dp"
+        android:layout_width="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:hint="Enter Number"
+            android:textSize="36sp"
+            android:textColor="@color/orange"
+            android:textAlignment="viewEnd" />
+    </TableRow>
+   <androidx.fragment.app.FragmentContainerView
+       android:id="@+id/numericKeypad"
+       android:name="com.example.calculatormaybeworks.NumericKeypad"
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"/>
+</LinearLayout>

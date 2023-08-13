@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:title="Calculator"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calculate_24"/>
+    <item
+        android:id="@+id/page_2"
+        android:title="Convertor"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_compare_arrows_24" />
+    <item
+        android:id="@+id/page_3"
+        android:title="Convertor"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_sticky_note_2_24" />
+</menu>

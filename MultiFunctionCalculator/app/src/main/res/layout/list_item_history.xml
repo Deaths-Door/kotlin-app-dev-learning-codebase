@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Holo.SegmentedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvHistoryEquation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textAlignment="viewEnd"
+        tools:text= "Equation"/>
+    <TextView
+        android:id="@+id/tvHistoryAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textAlignment="viewEnd"
+        tools:text= "Answer"/>
+</LinearLayout>
