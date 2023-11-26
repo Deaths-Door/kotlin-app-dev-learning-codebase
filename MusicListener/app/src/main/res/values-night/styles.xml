@@ -1,0 +1,9 @@
+<resources>
+    <style name="Circular"><item name="cornerSize">50%</item></style>
+    <style name="ParentBottomNav">
+        <item name="background">@color/light_gray</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemIconSize">27dp</item>
+    </style>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuLocalMusicViewAllSongs"
+        android:title="All Songs"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menuLocalMusicViewAlbums"
+        android:title="Albums"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menuLocalMusicViewArtist"
+        android:title="Artist"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menuLocalMusicViewAlbumArtist"
+        android:title="Album Artist"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menuLocalMusicViewGenre"
+        android:title="Genre"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_slogan">Without Music \nLife would be a mistake</string>
+
+    <string name="login_screen_login">Log-in</string>
+    <string name="login_screen_signin">Sign-in</string>
+    <string name="login_screen_email">Email</string>
+    <string name="login_screen_password">Password</string>
+    <string name="login_screen_error_invalid_email">Invalid Email</string>
+    <string name="login_screen_error_weak_password">Weak Password</string>
+    <string name="login_screen_error_account_not_exist">Account doesn\'t exist</string>
+    <string name="login_screen_success_login">Login is successful</string>
+    <string name="login_screen_unsuccess_login">Login was unsuccessful, wrong password or email</string>
+    <string name="login_screen_success_account_created">New account is successfully created</string>
+    <string name="login_screen_remember_me">Remember me</string>
+    <string name="login_screen_forgot_password">Forgot Password?</string>
+    <string name="login_screen_already_have_account">Already have an account?</string>
+    <string name="login_screen_dont_have_account">Don\'t have an account?</string>
+
+    <string name="event_maps_discover">Discover</string>
+    <string name="event_maps_my_concerts">My Concerts</string>
+    <string name="event_maps_favourites">Favourites</string>
+
+    <string name="settings_about">About</string>
+    <string name="settings_about_version_name">Version</string>
+    <string name="settings_about_third_party_software_name">Third-party software</string>
+    <string name="settings_about_third_party_software_description">Sweet Software that helped us</string>
+    <string name="settings_about_terms_conditions_name">Terms and Conditions</string>
+    <string name="settings_about_terms_conditions_description">All the stuff you need to know</string>
+    <string name="settings_about_privacy_policy_name">Privacy Policy</string>
+    <string name="settings_about_privacy_policy_description">Important for both of us</string>
+    <string name="settings_about_support_name">Support</string>
+    <string name="settings_about_support_description">Get help from us and the community</string>
+
+    <string name="settings_account">Account</string>
+    <string name="settings_account_log_out_name">Log Out</string>
+    <string name="settings_account_log_out_description">Allows users to log out of their account</string>
+    <string name="settings_account_delete_account_name">Delete Account</string>
+    <string name="settings_account_delete_account_description">Allows users to delete their account and all associated data</string>
+    <string name="settings_account_change_password_name">Change Password</string>
+    <string name="settings_account_change_password_description">Allows users to change the password associated with their account</string>
+    <string name="settings_account_language_name">Select Language</string>
+    <string name="settings_account_language_description">Choose your preferred language for the app</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library">Meine Biobilothek</string>
+
+    <string name="choose_language" translatable="true">Wählen Sie eine neue Sprache</string>
+    <string name="search" translatable="true">Suchen Sie</string>
+
+    <string name="log_out" translatable="true">Abmelden</string>
+    <string name="delete_account" translatable="true">Account löschen</string>
+    <string name="normalize_tracks" translatable="true">Tracks normalisieren</string>
+    <string name="skip_silence" translatable="true">Stille überspringen</string>
+    <string name="cross_fading" translatable="true">Überblendung</string>
+    <string name="mobile_data_streaming_videos" translatable="true">Mobile Daten für das Streaming von Videos nutzen</string>
+    <string name="mobile_data_streaming_music" translatable="true">Mobile Daten für das Streaming von Musik nutzen</string>
+    <string name="show_local_music_files" translatable="true">Lokale Musikdateien anzeigen</string>
+    <string name="download_video_files" translatable="true">Videodateien herunterladen</string>
+    <string name="mobile_data_downloading_music_files" translatable="true">Verwenden Sie Cellular zum Herunterladen von Musikdateien</string>
+    <string name="mobile_data_downloading_lyric_files" translatable="true">Verwenden Sie Cellular zum Herunterladen von Lyrikdateien</string>
+    <string name="mobile_data_downloading_video_files" translatable="true">Verwenden Sie Cellular zum Herunterladen von Videodateienn</string>
+
+    <string name="Account" translatable="true">Konto</string>
+    <string name="Audio" translatable="true">Audio</string>
+    <string name="Streaming" translatable="true">Streaming</string>
+    <string name="Files" translatable="true">Dateien</string>
+
+    <string-array name="sprachen">
+        <item>@string/en</item>
+        <item>@string/de</item>
+        <item>@string/fr</item>
+        <item>@string/tr</item>
+    </string-array>
+
+    <string name="en" translatable="true">Englisch</string>
+    <string name="de" translatable="true">Deutsch</string>
+    <string name="fr" translatable="true">Französisch</string>
+    <string name="tr" translatable="true">Türkisch</string>
+
+    <string name="account_delete_warning" translatable="true">Sind Sie sicher, dass Sie ihr Konto löschen möchten?</string>
+    <string name="cancel" translatable="true">Abbrechen</string>
+    <string name="log_out_msg" translatable="true">Vom Konto abmelden</string>
+    <string name="delete_account_msg" translatable="true">Sind Sie sicher, dass Sie Ihr Konto löschen wollen?</string>
+    <string name="delete" translatable="true">Löschen</string>
+
+    <string name="sort_by" translatable="true">Sortieren nach</string>
+    <string name="alphabetically_a_z" translatable="true">Alphabetisch A-Z</string>
+    <string name="alphabetically_z_a" translatable="true">Alphabetisch Z-A</string>
+    <string name="most_played" translatable="true">Meistgespielt</string>
+    <string name="most_recent" translatable="true">Das Neueste</string>
+    <string name="recently_played" translatable="true">Kürzlich gespielt</string>
+    <string name="recently_added" translatable="true">Kürzlich hinzugefügt</string>
+
+    <string name="lets_add_some_songs" translatable="true">Fügen wir ein paar Lieder hinzu</string>
+    <string name="add_songs" translatable="true">Lieder hinzufügen</string>
+
+    <string name="search_error_title" translatable="true">Keine Resultate für...</string>
+    <string name="search_error_text" translatable="true">Bitte überprüfen Sie Ihre Schreibweise oder verwenden Sie andere Schlüsselwörter</string>
+    <string name="downloading">Herunterladen</string>
+    <string name="notification_offline_support_msg">Überprüfung der für die Offline-Unterstützung verfügbaren Dateien</string>
+    <string name="download_complete">Vollständiger Download</string>
+
+    <string-array name="sozialMedien">
+        <item>@string/instagram</item>
+        <item>@string/youtube</item>
+        <item>@string/tiktok</item>
+        <item>@string/facebook</item>
+    </string-array>
+
+    <!--TODO transalte these -->
+    <string name="facebook" translatable="true">Go to artists Profile on FaceBook</string>
+    <string name="youtube" translatable="true">Go to artists Profile on Youtube</string>
+    <string name="tiktok" translatable="true">Go to artists Profile on Tiktok</string>
+    <string name="instagram" translatable="true">Go to artists Profile on Instagram</string>
+</resources>

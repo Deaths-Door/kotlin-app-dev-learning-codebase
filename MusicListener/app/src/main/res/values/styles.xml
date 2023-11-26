@@ -1,0 +1,9 @@
+<resources>
+    <style name="Circular"><item name="cornerSize">50%</item></style>
+    <style name="ParentBottomNav">
+        <item name="android:background">@color/pale_skin</item>
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemIconSize">27dp</item>
+    </style>
+</resources>

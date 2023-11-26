@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_view_pager_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/main_nav_graph" />
+
+    <!--TODO use this with shiftin effect-->
+    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/bottomNav"
+        style="@style/ParentBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:bbn_entries="@menu/menu_bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_view_pager_host"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <com.google.android.exoplayer2.ui.PlayerControlView
+        android:id="@+id/exoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:controller_layout_id="@layout/collapsed_exoplayer"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:resize_mode="fit"
+        app:show_timeout="-1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/regconizeSongMicroPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/img_microphone"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/exoplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/CircleShape" />
+</androidx.constraintlayout.widget.ConstraintLayout>

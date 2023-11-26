@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        tools:text="Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="Artist" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/artist" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Liked"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:icon="@drawable/heart_off"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/musixEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Musix Editor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_edit"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnLike" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lyricEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Show Lyrics"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_lyrics"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/musixEditor" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddToAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add to Album"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_lyrics"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnDownload" />
+
+    <!--TODO make this download / undownload depend if file is downloaded-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Download"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_downloaded"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/lyricEditor"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteFromDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Delete From Device"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_downloaded"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToAlbum" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hideFromAppView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Hide File From App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@drawable/img_downloaded"
+        app:iconSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/deleteFromDevice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

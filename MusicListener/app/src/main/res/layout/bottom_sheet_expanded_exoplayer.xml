@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="vm" type="com.example.musiclistener.music.MusicViewModel" />
+        <variable
+            name="context"
+            type="android.content.Context" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/expanded_bottom_sheet_exo_player_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@color/black"
+            android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/expanded_bottom_sheet_exo_player_img_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="30dp"
+                adapterViewModel="@{vm}"
+                adapterContext="@{context}"/>
+            <com.google.android.exoplayer2.ui.PlayerControlView
+                android:id="@+id/expanded_bottom_sheet_exo_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:controller_layout_id="@layout/expanded_exoplayer_layout"
+                app:show_timeout="-1" />
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+                <me.zhengken.lyricview.LyricView
+                    android:id="@+id/expanded_bottom_sheet_lyrics_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

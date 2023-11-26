@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_my_library"
+        android:title="@string/my_library"
+        android:icon="@drawable/ic_my_library"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menu_detailed_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menu_other_sources"
+        android:title="From Other sources"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menu_explore"
+        android:title="Explore"
+        android:icon="@color/orange"
+        android:enabled="true"/>
+</menu>

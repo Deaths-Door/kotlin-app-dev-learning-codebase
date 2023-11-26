@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.Maps">
+
+    <!--TODO update layout so that is uses constaint layout-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="-201dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:shapeAppearance="@style/CircleShape" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:shapeAppearance="@style/CircleShape" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/currentLocation"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearance="@style/CircleShape" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/myConcertsImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="40dp"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/CircleShape" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/myConcertsText"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/orange"
+        app:shapeAppearance="@style/CircleShape"
+        android:layout_marginStart="68dp"
+        app:layout_constraintStart_toEndOf="@+id/myConcertsImage"
+        app:layout_constraintTop_toTopOf="@+id/myConcertsImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/orange"
+        app:shapeAppearance="@style/CircleShape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/myConcertsText"
+        app:layout_constraintTop_toTopOf="@+id/myConcertsText" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/buttonMyLocation"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:src="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/shapeableImageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.963"
+        app:shapeAppearance="@style/CircleShape" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:padding="2.5dp"
+        android:text="My Concerts"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myConcertsImage"
+        app:shapeAppearance="@style/CircleShape"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

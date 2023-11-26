@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_maps"
+        android:title="Maps"
+        android:icon="@drawable/image_marker"
+        android:color="@color/green"
+
+        android:enabled="true"/>
+    <item
+        android:id="@+id/menu_library"
+        android:title="My Beats"
+        android:icon="@drawable/image_music_library"
+        android:color="@color/orange"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_explore"
+        android:title="Explore"
+        android:icon="@drawable/image_search"
+        android:color="@color/blue"
+        android:enabled="true"/>
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_slogan">Ohne Musik wäre \nLife ein Irrtum</string>
+
+    <string name="login_screen_login">Einloggen</string>
+    <string name="login_screen_signin">Anmeldung</string>
+    <string name="login_screen_email">E-Mail</string>
+    <string name="login_screen_password">Kennwort</string>
+    <string name="login_screen_error_invalid_email">Ungültige E-Mail</string>
+    <string name="login_screen_error_weak_password">Schwaches Password</string>
+    <string name="login_screen_error_account_not_exist">Das Konto existiert nicht</string>
+    <string name="login_screen_success_login">Login ist erfolgreich</string>
+    <string name="login_screen_success_account_created">Neues Konto ist erfolgreich erstellt</string>
+    <string name="login_screen_remember_me">Erinnere mich</string>
+    <string name="login_screen_forgot_password">Passwort vergessen?</string>
+    <string name="login_screen_already_have_account">Sie haben bereits ein Konto?</string>
+    <string name="login_screen_dont_have_account">Sie haben noch kein Konto?</string>
+
+    <string name="event_maps_discover">Entdecken Sie</string>
+    <string name="event_maps_my_concerts">Meine Konzerte</string>
+    <string name="event_maps_favourites">Lieblinge</string>
+
+    <string name="settings_about">About</string>
+    <string name="settings_about_version_name">Version</string>
+    <string name="settings_about_third_party_software_name">Software von Drittanbieterns</string>
+    <string name="settings_about_third_party_software_description">Süße Software, die uns geholfen hat</string>
+    <string name="settings_about_terms_conditions_name">Bedingungen und Konditionen</string>
+    <string name="settings_about_terms_conditions_description">Alles, was Sie wissen müssen</string>
+    <string name="settings_about_privacy_policy_name">Datenschutzbestimmungen</string>
+    <string name="settings_about_privacy_policy_description">Wichtig für uns beide</string>
+    <string name="settings_about_support_name">Unterstützung</string>eachLocalSongEntryWhere
+    <string name="settings_about_support_description">Holen Sie sich Hilfe von uns und der Gemeinschaft</string>
+
+    <string name="settings_account">Konto</string>
+    <string name="settings_account_log_out_name">Ausloggen</string>
+    <string name="settings_account_log_out_description">Ermöglicht Benutzern, sich von ihrem Konto auszuloggen</string>
+    <string name="settings_account_delete_account_name">Konto löschen</string>
+    <string name="settings_account_delete_account_description">Ermöglicht Nutzern, ihr Konto und alle damit verbundenen Daten zu löschen</string>
+    <string name="settings_account_change_password_name">Passwort ändern</string>
+    <string name="settings_account_change_password_description">Ermöglicht es Benutzern, das mit ihrem Konto verbundene Passwort zu ändern</string>
+    <string name="settings_account_language_name">Sprache auswählen</string>
+    <string name="settings_account_language_description">Wählen Sie Ihre bevorzugte Sprache für die App</string>
+</resources>

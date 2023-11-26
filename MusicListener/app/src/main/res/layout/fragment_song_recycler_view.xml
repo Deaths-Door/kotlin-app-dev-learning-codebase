@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="java.io.File"/>
+        <import type="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <variable name="vm" type="com.example.musiclistener.music.MusicViewModel" />
+        <variable name="playlistAppDB" type="com.example.musiclistener.appdatabase.PlaylistDao" />
+        <variable name="layoutDirection" type="int" />
+        <variable name="fragmentManager" type="androidx.fragment.app.FragmentManager" />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.reusable_fragments.SongRecyclerView">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            adapterViewModel="@{vm}"
+            adapterDB="@{playlistAppDB}"
+            adapterLayoutDirection="@{layoutDirection}"
+            fragmentManager="@{fragmentManager}"/>
+    </FrameLayout>
+</layout>
+

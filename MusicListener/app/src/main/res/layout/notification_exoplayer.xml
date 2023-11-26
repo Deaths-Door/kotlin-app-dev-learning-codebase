@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/notifications_artwork"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/notifications_artwork"
+        android:text="@string/app_name"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/notifications_artwork"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="NAME" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="54dp"
+        android:layout_toEndOf="@+id/notifications_artwork"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="ARTIST" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notifications_artwork"
+        android:layout_marginTop="-5dp">
+
+        <ImageButton
+            android:id="@+id/notification_liked"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/teal_200" />
+
+        <ImageButton
+            android:id="@+id/notification_exo_previous"
+            style="@style/ExoMediaButton.Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/notification_exo_pause"
+            style="@style/ExoMediaButton.Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/notification_exo_play"
+            style="@style/ExoMediaButton.Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/notification_exo_next"
+            style="@style/ExoMediaButton.Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/notification_remove_it"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/teal_200" />
+
+    </LinearLayout>
+</RelativeLayout>

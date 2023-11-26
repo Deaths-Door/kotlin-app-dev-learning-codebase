@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.example.musiclistener.SORT"/>
+        <variable name="vm" type="com.example.musiclistener.music.MusicViewModel" />
+        <variable name="onClick" type="com.example.musiclistener.adapters.OnClicks" />
+        <variable name="activity" type="com.example.musiclistener.ui.bottomsheets.SortBy" />
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:text="@string/sort_by"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_alphabetically_a_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.A_Z.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/alphabetically_a_z"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_alphabetically_z_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.Z_A.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/alphabetically_z_a"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_most_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.MOST_PLAYED.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/most_played"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_most_recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.MOST_RECENT.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/most_recent"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_recently_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.RECENTLY_PLAYED.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/recently_played"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/bottom_sheet_sort_by_recently_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> onClick.sort(activity,SORT.RECENTLY_ADDED.id,vm)}"
+                android:padding="10dp"
+                android:text="@string/recently_added"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

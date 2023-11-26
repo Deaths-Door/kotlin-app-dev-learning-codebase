@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/nav_my_library">
+    <fragment
+        android:id="@+id/nav_my_library"
+        android:name="com.example.musiclistener.ui.viewpager_fragments.MyLibrary"
+        android:label="fragment_my_library"
+        tools:layout="@layout/fragment_my_library" >
+        <action
+            android:id="@+id/action_nav_my_library_to_playlistView"
+            app:destination="@id/nav_playlist_view"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_my_library_to_artistProfile"
+            app:destination="@id/nav_artistProfile"
+            app:enterAnim="@android:anim/slide_in_left"/>
+        <action
+            android:id="@+id/action_nav_my_library_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_my_library_to_userProfile"
+            app:destination="@id/nav_userProfile"
+            app:enterAnim="@android:animator/fade_in"/>
+        <action
+            android:id="@+id/action_nav_my_library_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+        <action
+            android:id="@+id/action_nav_my_library_to_nav_explore"
+            app:destination="@id/nav_explore" />
+        <action
+            android:id="@+id/action_nav_my_library_to_localMusicView"
+            app:destination="@id/localMusicView" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detailed_search"
+        android:name="com.example.musiclistener.ui.viewpager_fragments.DetailedSearch"
+        android:label="fragment_detailed_search"
+        tools:layout="@layout/fragment_detailed_search" >
+        <action
+            android:id="@+id/action_nav_detailed_search_to_nav_my_library"
+            app:destination="@id/nav_my_library" />
+        <action
+            android:id="@+id/action_nav_detailed_search_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+        <action
+            android:id="@+id/action_nav_detailed_search_to_nav_explore"
+            app:destination="@id/nav_explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_playlist_view"
+
+        android:name="com.example.musiclistener.ui.reusable_fragments.PlaylistView"
+        android:label="fragment_playlist_view">
+        <action
+            android:id="@+id/action_nav_playlist_view_to_nav_my_library"
+            app:destination="@id/nav_my_library"
+           />
+        <action
+            android:id="@+id/action_nav_playlist_view_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_playlist_view_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+        <action
+            android:id="@+id/action_nav_playlist_view_to_explore"
+            app:destination="@id/nav_explore" />
+        <action
+            android:id="@+id/action_nav_playlist_view_to_nav_explore"
+            app:destination="@id/nav_explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_artistProfile"
+        android:name="com.example.musiclistener.ui.reusable_fragments.ArtistProfile"
+        android:label="fragment_artist_profile"
+        tools:layout="@layout/fragment_artist_profile" >
+        <action
+            android:id="@+id/action_nav_artistProfile_to_nav_my_library"
+            app:destination="@id/nav_my_library" />
+        <action
+            android:id="@+id/action_nav_artistProfile_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_artistProfile_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+        <action
+            android:id="@+id/action_nav_artistProfile_to_explore"
+            app:destination="@id/nav_explore" />
+        <action
+            android:id="@+id/action_nav_artistProfile_to_nav_explore"
+            app:destination="@id/nav_explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_userProfile"
+        android:name="com.example.musiclistener.ui.reusable_fragments.UserProfile"
+        android:label="UserProfile" >
+        <action
+            android:id="@+id/action_userProfile_to_nav_my_library"
+            app:destination="@id/nav_my_library" />
+        <action
+            android:id="@+id/action_userProfile_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_userProfile_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+        <action
+            android:id="@+id/action_nav_userProfile_to_explore2"
+            app:destination="@id/nav_explore" />
+        <action
+            android:id="@+id/action_nav_userProfile_to_nav_explore"
+            app:destination="@id/nav_explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_other_music_sources"
+        android:name="com.example.musiclistener.ui.viewpager_fragments.OtherMusicSources"
+        android:label="fragment_other_music_sources"
+        tools:layout="@layout/fragment_other_music_sources" >
+        <action
+            android:id="@+id/action_otherMusicSources_to_nav_my_library"
+            app:destination="@id/nav_my_library" />
+        <action
+            android:id="@+id/action_otherMusicSources_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_other_music_sources_to_explore"
+            app:destination="@id/nav_explore" />
+        <action
+            android:id="@+id/action_nav_other_music_sources_to_nav_explore"
+            app:destination="@id/nav_explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_explore"
+        android:name="com.example.musiclistener.ui.viewpager_fragments.Explore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_explore_to_nav_my_library"
+            app:destination="@id/nav_my_library" />
+        <action
+            android:id="@+id/action_explore_to_nav_detailed_search"
+            app:destination="@id/nav_detailed_search" />
+        <action
+            android:id="@+id/action_nav_explore_to_nav_other_music_sources"
+            app:destination="@id/nav_other_music_sources" />
+    </fragment>
+    <fragment
+        android:id="@+id/localMusicView"
+        android:name="com.example.musiclistener.ui.reusable_fragments.LocalMusicView"
+        android:label="fragment_local_music_view"
+        tools:layout="@layout/fragment_local_music_view" />
+</navigation>

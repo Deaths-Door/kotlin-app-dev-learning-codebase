@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_library" translatable="true">Ma bibliothèque</string>
+
+    <string name="choose_language" translatable="true">Choisir la langue</string>
+    <string name="search" translatable="true">Recherche</string>
+
+    <string name="log_out" translatable="true">Déconnexion</string>
+    <string name="delete_account" translatable="true">Supprimer le compte</string>
+    <string name="normalize_tracks" translatable="true">Normaliser les pistes</string>
+    <string name="skip_silence" translatable="true">Sauter le silence</string>
+    <string name="cross_fading" translatable="true">Cross-Fading</string>
+    <string name="mobile_data_streaming_videos" translatable="true">Utilisez les données mobiles pour la diffusion de vidéos en continus</string>
+    <string name="mobile_data_streaming_music" translatable="true">Utilisez les données mobiles pour écouter de la musique en continu</string>
+    <string name="show_local_music_files" translatable="true">Afficher les fichiers musicaux locaux</string>
+    <string name="download_video_files" translatable="true">Télécharger des fichiers vidéo</string>
+    <string name="mobile_data_downloading_music_files" translatable="true">Utiliser la téléphonie mobile pour télécharger des fichiers musicaux</string>
+    <string name="mobile_data_downloading_lyric_files" translatable="true">Utilisez votre téléphone portable pour télécharger des fichiers de paroles</string>
+    <string name="mobile_data_downloading_video_files" translatable="true">Utiliser la téléphonie mobile pour télécharger des fichiers vidéo</string>
+
+    <string name="Account" translatable="true">Compte</string>
+    <string name="Audio" translatable="true">Audio</string>
+    <string name="Streaming" translatable="true">Streaming</string>
+    <string name="Files" translatable="true">Fichiers</string>
+
+    <string-array name="sprachen">
+        <item>@string/en</item>
+        <item>@string/de</item>
+        <item>@string/fr</item>
+        <item>@string/tr</item>
+    </string-array>
+
+    <string name="en" translatable="true">Anglais</string>
+    <string name="de" translatable="true">Allemand</string>
+    <string name="fr" translatable="true">Français</string>
+    <string name="tr" translatable="true">Turc</string>
+
+    <string name="account_delete_warning" translatable="true">Vous êtes sûr de vouloir vous déconnecter de votre compte.</string>
+    <string name="cancel">Annuler</string>
+    <string name="log_out_msg">Déconnexion du compte</string>
+    <string name="delete_account_msg">Vous êtes sûr de vouloir supprimer votre compte</string>
+    <string name="delete">Supprimer</string>
+
+    <string name="sort_by">Trier par</string>
+    <string name="alphabetically_a_z">Alphabétiquement A-Z</string>
+    <string name="alphabetically_z_a">Alphabétiquement Z-A</string>
+    <string name="most_played">Les plus joués</string>
+    <string name="most_recent">Les plus récentes</string>
+    <string name="recently_played">Joué récemment</string>
+    <string name="recently_added">Récemment ajouté</string>
+
+    <string name="lets_add_some_songs">Ajoutons quelques chansons</string>
+    <string name="add_songs">Ajouter des chansons</string>
+
+    <string name="search_error_title" translatable="true">Aucun résultat pour...</string>
+    <string name="search_error_text" translatable="true">Veuillez vérifier votre orthographe ou utiliser des mots-clés différents</string>
+    <string name="downloading">Télécharger</string>
+    <string name="notification_offline_support_msg">Vérification des fichiers disponibles pour le support hors ligne</string>
+    <string name="download_complete">Téléchargement complet</string>
+
+
+    <string-array name="sozialMedien">
+        <item>@string/instagram</item>
+        <item>@string/youtube</item>
+        <item>@string/tiktok</item>
+        <item>@string/facebook</item>
+    </string-array>
+
+    <!--TODO transalte these -->
+    <string name="facebook" translatable="true">Go to artists Profile on FaceBook</string>
+    <string name="youtube" translatable="true">Go to artists Profile on Youtube</string>
+    <string name="tiktok" translatable="true">Go to artists Profile on Tiktok</string>
+    <string name="instagram" translatable="true">Go to artists Profile on Instagram</string>
+</resources>

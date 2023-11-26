@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="com.example.musiclistener.ui.reusable_fragments.UserPlaylists"/>
+        <variable name="vm" type="com.example.musiclistener.music.MusicViewModel" />
+        <variable name="appDB" type="com.example.musiclistener.appdatabase.AppDataBase" />
+        <variable name="layoutDirection" type="int" />
+    </data>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.reusable_fragments.UserPlaylists">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_library_rvPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            adapterLayoutDirection="@{layoutDirection}"
+            adapterViewModel="@{vm}"
+            adapterPlaylistDB="@{appDB.playlistDao()}"
+            adapterLocalMusicDB="@{appDB.localMusicDao()}"
+            tools:listitem="@layout/item_rv_playlist" />
+    </FrameLayout>
+</layout>
